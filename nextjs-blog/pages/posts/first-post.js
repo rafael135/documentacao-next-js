@@ -4,9 +4,12 @@ import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
 
+import Layout from "../../components/layout";
+
 export default function FirstPost() {
     return (
-        <>
+        <Layout>
+
             { /* "Head" => Componente do ReactJs, usado para alterar facilmente o head da pagina sem necessitar de reescrever a maior parte do codigo  */ }
             <Head>
                 <title>First Post</title>
@@ -27,6 +30,6 @@ export default function FirstPost() {
                 { /* "Link" => Componente do NextJs, usado para alternar entre paginas ou rotas da aplicacao */ }
                 <Link href="/">Back to home</Link>
             </h2>
-        </>
+        </Layout>
     );
 }
